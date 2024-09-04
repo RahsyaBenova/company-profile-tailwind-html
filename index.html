@@ -9,12 +9,30 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets/img/Logo Rahsya Benova Akbar.png" type="image/x-icon">
     <style>
+        #navbar{
+            position: sticky !important;
+            top: 0;
+            z-index: 50;
+
+        }
         html {
             scroll-behavior: smooth;
         }
         html
 {
     overflow-x: hidden; 
+}
+
+@media screen and (max-width: 400px) {
+    html, body {
+    overflow-x: hidden; 
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    html, body {
+    overflow-x: hidden; 
+  }
 }
     </style>
 </head>
@@ -86,7 +104,7 @@
 
 
  <!-- NAVBAR -->
- <div class="bg-base-100 p-4 shadow-md sticky top-0 z-50">
+ <div class="bg-base-100 p-4 shadow-md sticky top-0 z-50" id="navbar">
     <div class="container mx-auto flex justify-between items-center">
         <a href="#" class="text-xl font-bold">comIT</a>
         <!-- Navigation links (hidden on mobile) -->
