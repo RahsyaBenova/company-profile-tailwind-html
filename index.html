@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Company Solutions</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/Logo Rahsya Benova Akbar.png" type="image/x-icon">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        html,body
+{
+    overflow-x: hidden; 
+}
+    </style>
+</head>
+<body>
+   
+    
+
+    <!-- HERO SECTION -->
+    <div class="bg-gradient-to-br bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 text-white min-h-screencontainer mx-auto flex flex-col lg:flex-row items-center justify-between py-16 px-6">
+        <div class="lg:w-1/2 mb-12 lg:mb-0" data-aos="fade-right">
+            <h1 class="text-4xl font-bold text-purple-300 mb-4">Software Solutions for Everyone</h1>
+            <p class="text-gray-300 mb-6">
+                Software house services are needed to help your business connected with your target audience. Don't worry, we will make the process easy and quick as possible. So, what are you waiting for?
+            </p>
+            <div class="flex space-x-4">
+                <button class="bg-white text-gray-800 font-semibold py-2 px-4 rounded-lg hover:bg-gray-200">
+                    Learn More
+                </button>
+                <button class="bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700">
+                    Build a Project With Us
+                </button>
+            </div>
+        </div>
+        <div class="lg:w-100 bg-white text-gray-900 p-8 rounded-lg shadow-lg" data-aos="fade-left">
+            <h2 class="text-2xl font-bold mb-6">Let's build your dream Software with us.</h2>
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-purple-500 focus:border-purple-500">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-purple-500 focus:border-purple-500">
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-purple-500 focus:border-purple-500">
+                </div>
+                <div class="mb-4">
+                    <label for="company" class="block text-sm font-medium text-gray-700">Company</label>
+                    <input type="text" id="company" name="company" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-purple-500 focus:border-purple-500">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-purple-500 focus:border-purple-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+    <section class="py-8">
+        <p class="text-gray-500 text-sm text-center mb-4">Satisfied Clients</p>
+        <div class="relative">
+            <div class="flex justify-center space-x-6 py-2 overflow-x-auto no-scrollbar">
+                <img src="assets/img/microsoft-logo.png" alt="Microsoft" class="h-10 mx-2">
+                <img src="assets/img/apple-logo(1).png" alt="Apple" class="h-10 grayscale mx-2">
+                <img src="assets/img/logo-ui.png" alt="Universitas Indonesia" class="h-10 mx-2">
+                <img src="assets/img/logo-sap.png" alt="SAP" class="h-10 mx-2">
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+
+
+
+ <!-- NAVBAR -->
+ <div class="bg-base-100 p-4 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-xl font-bold">comIT</a>
+        <!-- Navigation links (hidden on mobile) -->
+        <div class="hidden lg:flex space-x-4">
+            <a href="#timeline" class="text-gray-700 hover:text-gray-900">History</a>
+            <a href="#projects" class="text-gray-700 hover:text-gray-900">Team</a>
+            <a href="#faq" class="text-gray-700 hover:text-gray-900">FAQ</a>
+            <a href="#contact" class="text-gray-700 hover:text-gray-900">Contact</a>
+        </div>
+        <!-- Hamburger menu (visible on mobile) -->
+        <div class="lg:hidden">
+            <button class="btn btn-ghost btn-circle" id="menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- Mobile menu (hidden by default) -->
+    <div class="lg:hidden hidden" id="menu">
+        <a href="#timeline" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">History</a>
+        <a href="#projects" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Team</a>
+        <a href="#faq" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">FAQ</a>
+        <a href="#contact" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Contact</a>
+    </div>
+</div>
+
+<script>
+    document.getElementById('menu-button').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        menu.classList.toggle('hidden');
+    });
+</script>
+
+
+
+<!-- about  -->
+
+    <div class="container mx-auto px-6 py-16 pb-16" data-aos="fade-up">
+        <div class="bg-gray-800 p-10 rounded-lg flex flex-col lg:flex-row items-center" >
+            <div class="lg:w-1/2 mb-8 lg:mb-0">
+                <img src="assets/img/1904.i402.013..Web development isometric concept composition.jpg" alt="Abstract Art" class="rounded-lg shadow-lg mx-auto">
+            </div>
+            <div class="lg:w-1/2 lg:ml-10">
+                <h2 class="text-xl uppercase font-semibold text-gray-400 mb-2">Who We Are</h2>
+                <h1 class="text-3xl lg:text-4xl font-bold text-white mb-6">The team that will bring your imagination into reality</h1>
+                <p class="text-gray-300 mb-8">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt nostrum accusantium alias nesciunt eveniet et laudantium a molestiae ex molestias illo temporibus nisi, dolor, sed aliquid obcaecati hic! Voluptates consequatur nam consequuntur?
+                </p>
+                <div class="flex justify-between text-center space-x-4">
+                    <div>
+                        <p class="text-2xl lg:text-3xl font-bold text-white">8+</p>
+                        <p class="text-gray-400 text-sm lg:text-base">Operated Years</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl lg:text-3xl font-bold text-white">100+</p>
+                        <p class="text-gray-400 text-sm lg:text-base">Happy Clients</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl lg:text-3xl font-bold text-white">200+</p>
+                        <p class="text-gray-400 text-sm lg:text-base">Amazing Projects</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl lg:text-3xl font-bold text-white">50+</p>
+                        <p class="text-gray-400 text-sm lg:text-base">Professionals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- timeline -->
+<h1 class="text-5xl mb-10 font-bold text-center sm:text-sm md:text-3xl pt-20" id="timeline">Our Journey</h1>
+<ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical px-4 sm:px-6 md:px-8 lg:px-12 z-10">
+    <li>
+        <div class="timeline-middle">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-5 w-5">
+                <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd" />
+            </svg>
+        </div>
+        <div class="timeline-start bg-gray-800 text-white p-6 rounded-lg shadow-lg md:text-end" data-aos="fade-right">
+            <time class="font-mono italic">2002</time>
+            <div class="text-lg font-black">Launch of WebSphere</div>
+            WebSphere, our flagship product, was introduced as a comprehensive suite of software tools designed to help businesses build, deploy, and manage web applications. It set new standards in web technology with its powerful integration and scalability features.
+        </div>
+        <hr />
+    </li>
+    <li>
+        <hr />
+        <div class="timeline-middle">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-5 w-5">
+                <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd" />
+            </svg>
+        </div>
+        <div class="timeline-end mb-10 timeline-start bg-gray-800 text-white p-6 rounded-lg shadow-lg" data-aos="fade-left">
+            <time class="font-mono italic">2007</time>
+            <div class="text-lg font-black">Introduction of SiteBuilder</div>
+            SiteBuilder revolutionized website creation by allowing users to build stunning, functional websites with a user-friendly drag-and-drop interface. This innovation made web development accessible to everyone, from small businesses to large enterprises.
+        </div>
+        <hr />
+    </li>
+    <li>
+        <hr />
+        <div class="timeline-middle">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-5 w-5">
+                <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd" />
+            </svg>
+        </div>
+        <div class="timeline-start mb-10 md:text-end timeline-start bg-gray-800 text-white p-6 rounded-lg shadow-lg md:text-end" data-aos="fade-right">
+            <time class="font-mono italic">2012</time>
+            <div class="text-lg font-black">Launch of CloudSync</div>
+            CloudSync was a game-changer in data management, offering seamless synchronization of files across multiple devices and platforms. It provided robust cloud storage solutions with advanced security features and collaborative tools.
+        </div>
+        <hr />
+    </li>
+    <li>
+        <hr />
+        <div class="timeline-middle">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-5 w-5">
+                <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd" />
+            </svg>
+        </div>
+        <div class="timeline-end mb-10 timeline-start bg-gray-800 text-white p-6 rounded-lg shadow-lg" data-aos="fade-left">
+            <time class="font-mono italic">2020</time>
+            <div class="text-lg font-black">Launch of DevHub</div>
+            DevHub marked our expansion into the development community with a comprehensive platform for software development. It integrates development tools, version control, and collaborative features to enhance productivity and streamline workflows for developers worldwide.
+        </div>
+    </li>
+</ul>
+
+<!-- Projects Section -->
+<section id="projects" class="pt-8">
+    <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
+        <header class="text-center">
+            <h2 class="text-2xl font-bold text-gray-900 sm:text-3xl">
+                Our Team
+            </h2>
+            <p class="mt-4 text-gray-500">Meet the talented individuals behind our projects.</p>
+        </header>
+
+        <ul class="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Team Member 1 -->
+            <li class="flex justify-center" data-aos="fade-up">
+                <div class="card card-compact bg-base-100 w-full max-w-sm shadow-xl">
+                    <figure>
+                        <img src="assets/img/cat kul.jpg" alt="Rahsya" class="h-48 sm:h-56 w-full object-cover" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Rahsya</h2>
+                        <p>Fullstack Web and Mobile Developer</p>
+                        <div class="card-actions justify-end">
+                            <a href="#rahsya" class="btn btn-primary">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- Team Member 2 -->
+            <li class="flex justify-center" data-aos="fade-up">
+                <div class="card card-compact bg-base-100 w-full max-w-sm shadow-xl">
+                    <figure>
+                        <img src="assets/img/bris.jpg" alt="Benova" class="h-48 sm:h-56 w-full object-cover" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Benova</h2>
+                        <p>Frontend Developer</p>
+                        <div class="card-actions justify-end">
+                            <a href="#benova" class="btn btn-primary">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- Team Member 3 -->
+            <li class="flex justify-center" data-aos="fade-up">
+                <div class="card card-compact bg-base-100 w-full max-w-sm shadow-xl">
+                    <figure>
+                        <img src="assets/img/by.jpg" alt="Akbar" class="h-48 sm:h-56 w-full object-cover" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Akbar</h2>
+                        <p>Backend Developer</p>
+                        <div class="card-actions justify-end">
+                            <a href="#akbar" class="btn btn-primary">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+<!-- Modals -->
+<div id="rahsya" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
+    <div class="bg-white rounded-lg p-4 sm:p-8 max-w-sm w-full mx-4 sm:mx-auto">
+        <img alt="Rahsya" src="assets/img/cat kul.jpg" class="h-48 sm:h-56 w-full object-cover rounded-t-lg" />
+        <h3 class="text-lg sm:text-xl font-semibold mb-4">Rahsya</h3>
+        <p class="mb-4 text-sm sm:text-base">Rahsya is a talented Fullstack Web and Mobile Developer with expertise in creating dynamic and responsive applications. With a strong background in both frontend and backend technologies, Rahsya delivers end-to-end solutions that meet the highest standards of performance and usability.</p>
+        <a href="#projects" class="inline-block px-4 py-2 text-white bg-blue-500 rounded">Close</a>
+    </div>
+</div>
+
+<div id="benova" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
+    <div class="bg-white rounded-lg p-4 sm:p-8 max-w-sm w-full mx-4 sm:mx-auto">
+        <img alt="Benova" src="assets/img/bris.jpg" class="h-48 sm:h-56 w-full object-cover rounded-t-lg" />
+        <h3 class="text-lg sm:text-xl font-semibold mb-4">Benova</h3>
+        <p class="mb-4 text-sm sm:text-base">Benova is a skilled Frontend Developer specializing in crafting visually appealing and user-friendly interfaces. With a keen eye for design and a deep understanding of modern frontend technologies, Benova ensures that every project delivers an exceptional user experience.</p>
+        <a href="#projects" class="inline-block px-4 py-2 text-white bg-blue-500 rounded">Close</a>
+    </div>
+</div>
+
+<div id="akbar" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
+    <div class="bg-white rounded-lg p-4 sm:p-8 max-w-sm w-full mx-4 sm:mx-auto">
+        <img alt="Akbar" src="assets/img/by.jpg" class="h-48 sm:h-56 w-full object-cover rounded-t-lg" />
+        <h3 class="text-lg sm:text-xl font-semibold mb-4">Akbar</h3>
+        <p class="mb-4 text-sm sm:text-base">Akbar is an experienced Backend Developer with expertise in designing and implementing scalable server-side solutions. With a strong command of backend technologies and a focus on optimizing performance, Akbar ensures that every application runs smoothly and efficiently.</p>
+        <a href="#projects" class="inline-block px-4 py-2 text-white bg-blue-500 rounded">Close</a>
+    </div>
+</div>
+</section>
+
+<!-- FAQ Section -->
+<header class="text-center  pt-20 "  id="faq">
+    <h2 class="text-2xl font-bold text-gray-900 sm:text-3xl">
+        FAQ
+    </h2>
+    <p class="mt-4 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dignissimos sunt deserunt!</p>
+</header>
+<div class="flex justify-center py-8 -mb-52">
+    <div class="w-full max-w-6xl bg-white rounded-lg shadow-lg p-6">
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="faq-accordion" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What services do you offer?</div>
+            <div class="collapse-content mt-4 p-4 bg-gray-50 rounded-lg">
+                <p>We offer a range of services including custom software development, web and mobile application development, cloud solutions, and IT consulting. Our team specializes in building scalable and secure solutions tailored to meet the unique needs of each client.</p>
+            </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-200 mt-4">
+            <input type="radio" name="faq-accordion" />
+            <div class="collapse-title text-xl font-medium">What industries do you specialize in?</div>
+            <div class="collapse-content mt-4 p-4 bg-gray-50 rounded-lg">
+                <p>Our expertise spans various industries including finance, healthcare, e-commerce, education, and technology. We have a proven track record of delivering innovative solutions that address the specific challenges and opportunities within these sectors.</p>
+            </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-200 mt-4">
+            <input type="radio" name="faq-accordion" />
+            <div class="collapse-title text-xl font-medium">How do you approach a new project?</div>
+            <div class="collapse-content mt-4 p-4 bg-gray-50 rounded-lg">
+                <p>Our approach begins with understanding your business goals and requirements. We then conduct a thorough analysis and provide a detailed project plan outlining the development phases, timelines, and milestones. Throughout the project, we maintain open communication and ensure regular updates to keep you informed and engaged.</p>
+            </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-200 mt-4">
+            <input type="radio" name="faq-accordion" />
+            <div class="collapse-title text-xl font-medium">What technologies do you use?</div>
+            <div class="collapse-content mt-4 p-4 bg-gray-50 rounded-lg">
+                <p>We leverage a wide range of technologies to build high-quality solutions. This includes front-end technologies like React and Angular, back-end technologies like Node.js and Python, and cloud platforms such as AWS and Azure. Our choice of technology depends on the specific needs and objectives of the project.</p>
+            </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-200 mt-4">
+            <input type="radio" name="faq-accordion" />
+            <div class="collapse-title text-xl font-medium">Can you assist with ongoing maintenance and support?</div>
+            <div class="collapse-content mt-4 p-4 bg-gray-50 rounded-lg">
+                <p>Yes, we offer comprehensive maintenance and support services to ensure the continued performance and security of your software. Our support plans are designed to provide timely updates, bug fixes, and enhancements to keep your systems running smoothly.</p>
+            </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-200 mt-4">
+            <input type="radio" name="faq-accordion" />
+            <div class="collapse-title text-xl font-medium">How do you ensure the security of your software solutions?</div>
+            <div class="collapse-content mt-4 p-4 bg-gray-50 rounded-lg">
+                <p>Security is a top priority for us. We follow best practices and industry standards for secure coding and conduct regular security assessments to identify and address vulnerabilities. Our development process includes implementing robust security measures to protect your data and ensure compliance with relevant regulations.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Us -->
+<section id="contact" class="contact py-12 px-4 pt-16 mt-20 mb-20">
+    <div class="text-center">
+        <h2 class="text-4xl font-bold mb-4 text-gray pt-32">
+            <span class="text-blue-500">Contact</span> Us
+        </h2>
+        <p class="text-gray mb-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nemo corrupti quos aperiam sunt. Voluptatem?
+        </p>
+    </div>
+    <div class="lg:flex lg:justify-center lg:items-start lg:gap-8" data-aos="fade-up">
+        <!-- Google Maps Embed -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15958.625980499348!2d101.4378965!3d0.5160427!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5ada587458ae7%3A0x8fbcc32e7aa3065f!2sPT%20Solusi%20Data%20Madani!5e0!3m2!1sid!2sid!4v1725436434427!5m2!1sid!2sidd" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade" 
+                class="w-full h-64 lg:h-96 lg:w-1/2 mb-8 lg:mb-0 rounded-lg shadow-lg">
+        </iframe>
+        
+
+        <!-- Contact Form -->
+        <form class="w-full lg:w-1/2 p-8 rounded-lg shadow-lg lg:mt-10">
+            <div class="mb-4">
+                <div class="relative">
+                    <i data-feather="user" class="absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" placeholder="Nama" class="w-full pl-10 p-3  text-gray-300 placeholder-gray-400 rounded-lg border border-gray-700 focus:ring focus:ring-yellow-500 focus:outline-none">
+                </div>
+            </div>
+            <div class="mb-4">
+                <div class="relative">
+                    <i data-feather="mail" class="absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-400"></i>
+                    <input type="email" placeholder="Email" class="w-full pl-10 p-3  text-gray-300 placeholder-gray-400 rounded-lg border border-gray-700 focus:ring focus:ring-yellow-500 focus:outline-none">
+                </div>
+            </div>
+            <div class="mb-6">
+                <div class="relative">
+                    <i data-feather="phone" class="absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-400"></i>
+                    <input type="tel" placeholder="Nomor Handphone" class="w-full pl-10 p-3  text-gray-300 placeholder-gray-400 rounded-lg border border-gray-700 focus:ring focus:ring-yellow-500 focus:outline-none">
+                </div>
+            </div>
+            <button type="submit" class="w-full py-3 bg-primary text-white font-semibold rounded-lg hover:bg-green-500 focus:ring focus:ring-yellow-500">
+                Kirim Pesan
+            </button>
+        </form>
+    </div>
+</section>
+
+
+<footer class="footer footer-center bg-base-200 text-base-content rounded p-10">
+    <nav class="grid grid-flow-col gap-4">
+        <a class="link link-hover" href="#timeline">History</a>
+        <a class="link link-hover" href="#projects">Team</a>
+        <a class="link link-hover" href="#faq">FAQ</a>
+        <a class="link link-hover" href="#contact">Contact</a>
+    </nav>
+    <nav>
+        <div class="grid grid-flow-col gap-4">
+            <!-- Facebook -->
+            <a href="https://www.github.com/RahsyaBenova" target="_blank" rel="noopener noreferrer">
+                <span class="[&>svg]:h-5 [&>svg]:w-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 496 512">
+                      <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                      <path
+                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                    </svg>
+                  </span>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/rahsyabenova/" target="_blank" rel="noopener noreferrer">
+<span class="[&>svg]:h-5 [&>svg]:w-5">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
+      viewBox="0 0 448 512">
+      <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+      <path
+        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+    </svg>
+</span>
+</a>
+  
+            <!-- LinkedIn -->
+            <a href="https://id.linkedin.com/in/rahsya-benova-akbar-88576031b/ target="_blank" rel="noopener noreferrer">
+                <span class="[&>svg]:h-5 [&>svg]:w-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 448 512">
+                      <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                      <path
+                        d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                    </svg>
+                  </span>
+            </a>
+        </div>
+    </nav>
+    <aside>
+        <p>Copyright © 2024 - All rights reserved by Rahsya Ganteng</p>
+    </aside>
+</footer>
+
+<style>
+    /* Hide modals by default */
+#rahsya, #benova, #akbar {
+    display: none;
+}
+
+/* Show modal when the anchor is targeted */
+#rahsya:target, #benova:target, #akbar:target {
+    display: flex;
+}
+
+</style>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</body>
+</html>
