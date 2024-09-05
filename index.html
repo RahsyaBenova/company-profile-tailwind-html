@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,26 +9,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets/img/Logo Rahsya Benova Akbar.png" type="image/x-icon">
     <style>
-        #navbar{
-            position: sticky !important;
-            top: 0;
-            z-index: 50;
 
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-        
     </style>
 </head>
 <body>
-   
-    
 
     <!-- HERO SECTION -->
     <div class="bg-gradient-to-br bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 text-white min-h-screencontainer mx-auto flex flex-col lg:flex-row items-center justify-between py-16 px-6">
         <div class="lg:w-1/2 mb-12 lg:mb-0" >
-            <h1 class="text-4xl font-bold text-purple-300 mb-4">Software Solutions for Everyone</h1>
+            <h1 class="text-4xl font-bold text-white mb-4">Software Solutions for Everyone</h1>
             <p class="text-gray-300 mb-6">
                 Software house services are needed to help your business connected with your target audience. Don't worry, we will make the process easy and quick as possible. So, what are you waiting for?
             </p>
@@ -36,9 +25,11 @@
                 <button class="bg-white text-gray-800 font-semibold py-2 px-4 rounded-lg hover:bg-gray-200">
                     Learn More
                 </button>
-                <button class="bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700">
+                <a href="https://rahsyabenova.github.io/portofolio-tailwind-html" target="_blank">
+                <button class="bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700  animate-pulse">
                     Build a Project With Us
                 </button>
+            </a>
             </div>
         </div>
         <div class="lg:w-100 bg-white text-gray-900 p-8 rounded-lg shadow-lg" >
@@ -81,25 +72,17 @@
             </div>
         </div>
     </section>
-    
-    
-    
-    
-
-
 
  <!-- NAVBAR -->
  <div class="bg-base-100 p-4 shadow-md sticky top-0 z-50" id="navbar">
     <div class="container mx-auto flex justify-between items-center">
         <a href="#" class="text-xl font-bold">comIT</a>
-        <!-- Navigation links (hidden on mobile) -->
         <div class="hidden lg:flex space-x-4">
             <a href="#timeline" class="text-gray-700 hover:text-gray-900">History</a>
             <a href="#projects" class="text-gray-700 hover:text-gray-900">Team</a>
             <a href="#faq" class="text-gray-700 hover:text-gray-900">FAQ</a>
             <a href="#contact" class="text-gray-700 hover:text-gray-900">Contact</a>
         </div>
-        <!-- Hamburger menu (visible on mobile) -->
         <div class="lg:hidden">
             <button class="btn btn-ghost btn-circle" id="menu-button">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -108,7 +91,6 @@
             </button>
         </div>
     </div>
-    <!-- Mobile menu (hidden by default) -->
     <div class="lg:hidden hidden" id="menu">
         <a href="#timeline" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">History</a>
         <a href="#projects" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Team</a>
@@ -123,8 +105,6 @@
         menu.classList.toggle('hidden');
     });
 </script>
-
-
 
 <!-- about  -->
 
@@ -161,9 +141,8 @@
         </div>
     </div>
 
-
 <!-- timeline -->
-<h1 class="text-5xl mb-10 font-bold text-center sm:text-sm md:text-3xl pt-20" id="timeline">Our Journey</h1>
+<h1 class="text-5xl mb-10 font-bold text-center sm:text-sm md:text-3xl pt-20 mb-14" id="timeline">Our Journey</h1>
 <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical px-4 sm:px-6 md:px-8 lg:px-12 z-10">
     <li>
         <div class="timeline-middle">
@@ -250,7 +229,7 @@
 </ul>
 
 <!-- Projects Section -->
-<section id="projects" class="pt-8">
+<section id="projects" class="pt-8 bg-gray-100">
     <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
         <header class="text-center">
             <h2 class="text-2xl font-bold text-gray-900 sm:text-3xl">
@@ -260,7 +239,6 @@
         </header>
 
         <ul class="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <!-- Team Member 1 -->
             <li class="flex justify-center" >
                 <div class="card card-compact bg-base-100 w-full max-w-sm shadow-xl">
                     <figure>
@@ -275,7 +253,6 @@
                     </div>
                 </div>
             </li>
-            <!-- Team Member 2 -->
             <li class="flex justify-center" >
                 <div class="card card-compact bg-base-100 w-full max-w-sm shadow-xl">
                     <figure>
@@ -290,7 +267,6 @@
                     </div>
                 </div>
             </li>
-            <!-- Team Member 3 -->
             <li class="flex justify-center" >
                 <div class="card card-compact bg-base-100 w-full max-w-sm shadow-xl">
                     <figure>
@@ -307,7 +283,6 @@
             </li>
         </ul>
     </div>
-
 
 <!-- Modals -->
 <div id="rahsya" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
@@ -345,7 +320,7 @@
     </h2>
     <p class="mt-4 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dignissimos sunt deserunt!</p>
 </header>
-<div class="flex justify-center py-8 -mb-52">
+<div class="flex justify-center py-8 -mb-52 pb-20">
     <div class="w-full max-w-6xl bg-white rounded-lg shadow-lg p-6">
         <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="faq-accordion" checked="checked" />
@@ -398,9 +373,9 @@
 </div>
 
 <!-- Contact Us -->
-<section id="contact" class="contact py-12 px-4 pt-16 mt-20 mb-20">
+<section id="contact" class="contact py-12 px-4   mt-20 mb-20">
     <div class="text-center">
-        <h2 class="text-4xl font-bold mb-4 text-gray pt-32">
+        <h2 class="text-4xl font-bold mb-4 text-gray pt-14">
             <span class="text-blue-500">Contact</span> Us
         </h2>
         <p class="text-gray mb-8">
@@ -461,7 +436,6 @@
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
                       viewBox="0 0 496 512">
-                      <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
                       <path
                         d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
                     </svg>
